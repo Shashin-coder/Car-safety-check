@@ -19,7 +19,12 @@ function draw() {
   background(0); 
   
  car.velocityX=Speed;
-
+ fill("red")
+ textSize(30);
+text("Speed=" + Math.round(Speed),200,50);
+fill("red")
+ textSize(30);
+text("Weight="+ Math.round(weight),400,50);
  
   if(wall.x-car.x < car.width/2+wall.width/2 ){
       car .velocityX=0;
